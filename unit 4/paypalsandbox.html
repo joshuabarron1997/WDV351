@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Paypal Sandbox</title>
+<style>
+	table{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.data {
+		text-align: center;
+		border: 1px black solid;
+	}
+	h3 {
+		text-align: center;
+	}
+</style>
+</head>
+
+<body>
+	<h3>This is an academic site that stimulates paypal scenarios. Do not use your real information. </h3>
+	<table>
+		<tr>
+			<td class = "data">
+				<p>$5 Buy Button</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="QU6Q3DKM3TSQJ">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<p>$10 Buy Button w/Tax</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<p>$15 Buy Button w/Shipping</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHmQYJKoZIhvcNAQcEoIIHijCCB4YCAQExggE6MIIBNgIBADCBnjCBmDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExETAPBgNVBAcTCFNhbiBKb3NlMRUwEwYDVQQKEwxQYXlQYWwsIEluYy4xFjAUBgNVBAsUDXNhbmRib3hfY2VydHMxFDASBgNVBAMUC3NhbmRib3hfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMA0GCSqGSIb3DQEBAQUABIGADb6tTmRGICbmlfXy6nXQuKj4CXm6rfU6yOuMHv0qeZTcmj1vUlyH8sfzteqOeEvIbmCNXKKDF5/0J+U99tpoyB+5gco9yw/uvU5nmpevyS6mNCZePrwGxPgcHEUEzXLe4SOqlJVRX+9XZqEh1OBzgrkyjArYB1SQZKNs10akhMwxCzAJBgUrDgMCGgUAMIHkBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECKsoR5RyBt0fgIHAFBq39Ww+lclXXXHMiv9pRX8Xy1ehnGuoeL4/5Zvju5uhruuJYcID8auMbUxR7uHaRrDOZV34x75VCkkXEsKYEm0xbxkLhQeIaVpoiJm8PrnRnVsQvbpqfrYkdywHxWC/IZe2yXBRuVGHtVqnF3PJiStvcETObHHJNUUjDR0GFQI089Xh8i+HZMWedZ7/7LsU0mG243bCLXLl3qYMDpou3DA0VZkUAINN96ss0at9E33QMAdfvJ3oGMSUYHr0Xu8moIIDpTCCA6EwggMKoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgZgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMREwDwYDVQQHEwhTYW4gSm9zZTEVMBMGA1UEChMMUGF5UGFsLCBJbmMuMRYwFAYDVQQLFA1zYW5kYm94X2NlcnRzMRQwEgYDVQQDFAtzYW5kYm94X2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDA0MTkwNzAyNTRaFw0zNTA0MTkwNzAyNTRaMIGYMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTERMA8GA1UEBxMIU2FuIEpvc2UxFTATBgNVBAoTDFBheVBhbCwgSW5jLjEWMBQGA1UECxQNc2FuZGJveF9jZXJ0czEUMBIGA1UEAxQLc2FuZGJveF9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALeW47/9DdKjd04gS/tfi/xI6TtY3qj2iQtXw4vnAurerU20OeTneKaE/MY0szR+UuPIh3WYdAuxKnxNTDwnNnKCagkqQ6sZjqzvvUF7Ix1gJ8erG+n6Bx6bD5u1oEMlJg7DcE1k9zhkd/fBEZgc83KC+aMH98wUqUT9DZU1qJzzAgMBAAGjgfgwgfUwHQYDVR0OBBYEFIMuItmrKogta6eTLPNQ8fJ31anSMIHFBgNVHSMEgb0wgbqAFIMuItmrKogta6eTLPNQ8fJ31anSoYGepIGbMIGYMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTERMA8GA1UEBxMIU2FuIEpvc2UxFTATBgNVBAoTDFBheVBhbCwgSW5jLjEWMBQGA1UECxQNc2FuZGJveF9jZXJ0czEUMBIGA1UEAxQLc2FuZGJveF9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQBXNvPA2Bl/hl9vlj/3cHV8H4nH/q5RvtFfRgTyWWCmSUNOvVv2UZFLlhUPjqXdsoT6Z3hns5sN2lNttghq3SoTqwSUUXKaDtxYxx5l1pKoG0Kg1nRu0vv5fJ9UHwz6fo6VCzq3JxhFGONSJo2SU8pWyUNW+TwQYxoj9D6SuPHHRTGCAaQwggGgAgEBMIGeMIGYMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTERMA8GA1UEBxMIU2FuIEpvc2UxFTATBgNVBAoTDFBheVBhbCwgSW5jLjEWMBQGA1UECxQNc2FuZGJveF9jZXJ0czEUMBIGA1UEAxQLc2FuZGJveF9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTAxMzIwNTU1NlowIwYJKoZIhvcNAQkEMRYEFJysT3DAiEMz6PHDb0slp0hV9V/xMA0GCSqGSIb3DQEBAQUABIGAfNZSJ+YVRRmBXKUHIMu7boDE/mnFTohPaDm8SKD6VMshWr5kT0A5x/O4iofJziC51Lm+xrrV1UQH8AGqTHxnhjQerrMBCH9tVUkRwuY0GSYeyqlzMImundA8fUTxRf4zyJIEmOIBdzjPib8GOOD+IBrFlC/Nc1yT06RoyrCKt/A=-----END PKCS7-----">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td class = "data">
+				<p>Drop Down Menu Varying Prices</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Colors">Colors</td></tr><tr><td><select name="os0">
+					<option value="Red">Red $3.00 USD</option>
+					<option value="Green">Green $6.00 USD</option>
+					<option value="Blue">Blue $9.00 USD</option>
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<p>Multiple Options</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="EZCJ9JTQ8SNK8">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+					<option value="Small">Small $12.00 USD</option>
+					<option value="Medium">Medium $15.00 USD</option>
+					<option value="Large">Large $18.00 USD</option>
+				</select> </td></tr>
+				<tr><td><input type="hidden" name="on1" value="Color">Color</td></tr><tr><td><select name="os1">
+					<option value="Red">Red </option>
+					<option value="Green">Green </option>
+					<option value="Blue">Blue </option>
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<p>Special Message</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Valentine Message">Valentine Message</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+				</table>
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td class = "data">
+				<p>$10 Donation</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick" />
+				<input type="hidden" name="hosted_button_id" value="STFUPAW448MVG" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+			</td>
+			<td class = "data">
+				<p>Multiple Choice Donation</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick" />
+				<input type="hidden" name="hosted_button_id" value="JXM3NPRFAQHXW" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+
+			</td>
+			<td class = "data">
+				<p>Recurring Donation</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick" />
+				<input type="hidden" name="hosted_button_id" value="F5DHZH6ZCZUBU" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td class = "data">
+				<p>3 Month Subscription - $18</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="CMY4WDJXNTRQ2">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>			
+			<td class = "data">
+				<p>1 Year Subscription - $60</p>
+				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="H7P65UBEMUY3Q">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<p>Add to Cart - $40</p>
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="JTDYCEB2S2P7G">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

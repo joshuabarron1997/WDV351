@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<title>Embeded Video</title>
+<script>	
+</script>
+</head>
+
+<body>
+	
+	<p>Youtube Embed | Adding ?rel=0 makes the video have no recommendations<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+	
+	<p>Local Storage Embed | <button onclick="playPause()">Play/Pause</button><button onclick="reload()">Reload</button> <br>
+		<video id = "localVideo" width= "auto" height= "auto" controls>
+			<source src="Jilly Bean and Kodi.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</p>
+	<script>
+		var myVideo = document.querySelector("#localVideo");
+		function playPause(){
+			if (myVideo.paused){
+				myVideo.play();
+			}
+			else {
+				myVideo.pause();
+			}
+		}
+		function reload(){
+			myVideo.load();
+		}
+	</script>
+</body>
+</html>

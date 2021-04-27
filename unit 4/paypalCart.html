@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Paypal Sandbox</title>
+<style>
+	.container {
+		background-color:skyblue;
+		height: auto;
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	table{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.data {
+		text-align: center;
+		border: 1px black solid;
+	}
+	h3 {
+		text-align: center;
+	}
+	.cart {
+		text-align: right;
+		margin: 10px;
+	}
+</style>
+</head>
+
+<body>
+	<div class = "container">
+		<h3>This is an academic site that stimulates paypal scenarios. Do not use your real information. </h3>
+		<table>
+		<tr>
+			<td class = "data">
+				<img src="images/hat-2519955_1280.png" height = "150px" width = "auto" alt = "hat">
+				<p>Hat $10</p>
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="JTDYCEB2S2P7G">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
+			</td>
+			<td class = "data">
+				<img src= "images/shirts.png" height = "150px" width = "auto" alt = "shirts">				
+				<p>Buy Shirt</p>
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="FT5MGDJA7EJ3U">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+					<option value="Small">Small $18.00 USD</option>
+					<option value="Medium">Medium $21.00 USD</option>
+					<option value="Large">Large $25.00 USD</option>
+				</select> </td></tr>
+				<tr><td><input type="hidden" name="on1" value="Color">Color</td></tr><tr><td><select name="os1">
+					<option value="Red">Red </option>
+					<option value="Green">Green </option>
+					<option value="Blue">Blue </option>
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<img src="images/socks.jpg" height = "150px" width = "auto" alt = "socks">
+				<p>Socks $13</p>
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="KSK7AXGPE7RC6">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+					<option value="White">White </option>
+					<option value="Gray">Gray </option>
+					<option value="Black">Black </option>
+				</select> </td></tr>
+				</table>
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+			<td class = "data">
+				<img src="images/valentine.jpg" height = "150px" width = "auto" alt = "valentine">
+				<p>Valentine with Message</p>
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="7VZAR8AMC8HWW">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Message">Message</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+				</table>
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</td>
+		</tr>
+		</table>
+		<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" class = "cart">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+		<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+
+	</div>
+
+</body>
+</html>
